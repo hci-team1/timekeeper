@@ -5,8 +5,17 @@ var models = require('../models');
  */
 
  exports.view = function(req, res) {
- 	res.render('currenttask', tasks);
- }
+ 	
+ 	models.Tasks
+ 		.find()
+ 		.exec(renderTasks);
+
+ 	function renderTasks(err, tasks) {
+ 		res.render('currenttask', { 'tasks' : tasks});
+
+ 		console.log(tasks);
+ 	}
+ };
 
  exports.addTasks = function(req, res) {
  	//res.render('currenttask');	// CHANGE THIS
@@ -37,9 +46,9 @@ var models = require('../models');
 
  	// query for the specific task
  		models.Tasks
- 			.find({ "_id": taskID })
- 			.remove()
- 			.exec(deleteCallback);
+ 		  .find({ "_id": taskID })
+ 		  .remove()
+ 		  .exec(deleteCallback);
 
  	// function being called after delete
  	function deleteCallback(err) {
