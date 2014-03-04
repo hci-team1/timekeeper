@@ -100,7 +100,7 @@
     <div class="w-container currtask_container"></div>
   </div>
 
-  <!-- button to scroll up to top of page -->
+  <!-- button to scroll up to top of page 
   <div>
     <div class="w-container">
       <a class="w-inline-block top_of_page" href="#toppage">
@@ -108,50 +108,16 @@
       </a>
     </div>
   </div>
+  -->
 
   <!-- script files provided by webflow -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
 
-  <!-- modal window for checking tasks -->
+  <!-- scripts for pop up windows -->
   <script type="text/javascript">
     $(document).ready(function() {
-      $('.checktask-link').click(function() {
-        $('.checktask-background').fadeIn();
-      });
-      $('.close-checktask').click(function() {
-        $('.checktask-background').fadeOut();
-      });
-    });
-  </script>
-
-  <!-- modal window for checking tasks -->
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('.checktasktime-link').click(function() {
-        $('.checktask-background').fadeIn();
-      });
-      $('.close-checktask').click(function() {
-        $('.checktask-background').fadeOut();
-      });
-    });
-  </script>
-
-  <!-- modal window for confirmation "are you sure" -->
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('.confirm-link').click(function() {
-        $('.confirm-background').fadeIn();
-      });
-      $('.close-confirm').click(function() {
-        $('.confirm-background').fadeOut();
-      });
-    });
-  </script>
-
-  <!-- modal window for see more add task options -->
-  <script type="text/javascript">
-    $(document).ready(function() {
+      // modal window for "see more"
       $('.form-link').click(function() {
         $('.form-background').fadeIn();
       });
@@ -160,6 +126,5 @@
       });
     });
   </script>
-
 </body>
 </html>

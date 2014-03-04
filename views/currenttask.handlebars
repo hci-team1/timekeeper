@@ -160,45 +160,34 @@
   <!-- script file for webflow -->
   <script type="text/javascript" src="js/webflow.js"></script>
 
-  <!-- modal window for how to add task -->
+  <!-- scripts for pop up windows -->
   <script type="text/javascript">
     $(document).ready(function() {
+      // modal window for checking tasks
       $('.modal-link').click(function() {
         $('.modal-background').fadeIn();
       });
       $('.close-modal').click(function() {
         $('.modal-background').fadeOut();
       });
-    });
-  </script>
 
-  <!-- modal window for checking tasks -->
-  <script type="text/javascript">
-    $(document).ready(function() {
+      // modal window for checking tasks
       $('.checktask-link').click(function() {
         $('.checktask-background').fadeIn();
       });
       $('.close-checktask').click(function() {
         $('.checktask-background').fadeOut();
       });
-    });
-  </script>
 
-  <!-- modal window for checking tasks -->
-  <script type="text/javascript">
-    $(document).ready(function() {
+      // modal window for checking tasks
       $('.checktasktime-link').click(function() {
         $('.checktask-background').fadeIn();
       });
       $('.close-checktask').click(function() {
         $('.checktask-background').fadeOut();
       });
-    });
-  </script>
 
-  <!-- modal window for confirmation "are you sure" -->
-  <script type="text/javascript">
-    $(document).ready(function() {
+      // modal window for confirming the delete task
       $('.confirm-link').click(function() {
         $('.confirm-background').fadeIn();
       });
@@ -207,6 +196,5 @@
       });
     });
   </script>
-
 </body>
 </html>

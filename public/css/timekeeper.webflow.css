@@ -527,6 +527,33 @@ p {
   .button.edit_task:active {
     background-color: #5a7cdb;
   }
+  .button.logout_yes {
+    width: 100%;
+    height: 45px;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-right: 0px;
+    float: none;
+    border-radius: 7px;
+    background-color: #05ad4e;
+    font-family:'Varela Round', sans-serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  .button.logout_no {
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-right: 0px;
+    float: none;
+    border-radius: 7px;
+    background-color: #a61e1e;
+    font-family:'Varela Round', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+  }
   .section {
     padding-right: 11px;
   }
@@ -1414,5 +1441,49 @@ p {
   .settings_form {
     width: 95%;
     margin-left: 7px;
+  }
+  .bottom_text {
+    margin-top: 35px;
+    font-family: Oswald, sans-serif;
+    color: rgba(255, 255, 255, 0.49);
+    font-size: 9px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .logout-background {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    bottom: 115px;
+    z-index: 3;
+    display: none;
+    width: 95%;
+    margin: 0px auto;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    border-radius: 7px;
+    background-color: #131417;
+    opacity: 0.99;
+  }
+  .logout-window {
+    display: block;
+    width: 90%;
+    margin-right: auto;
+    margin-bottom: 5px;
+    margin-left: auto;
+  }
+  .logout_text {
+    display: block;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 5px;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: -1px;
+    text-transform: none;
   }
 }
