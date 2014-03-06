@@ -76,7 +76,6 @@ app.get('/addtask', addtask.view);			// change this too so you can add
 app.get('/currenttask', currenttask.view);	// change this too
 app.post('/currenttask', currenttask.addTasks);		// IMPLEMENT THIS
 
-//TODO fix post url conflict
 app.post('/currenttask/deleted', currenttask.deleteTasks);	// IMPLEMENT THIS
 
 app.get('/homescreen', homescreen.view);	// view the homescreen
