@@ -37,10 +37,7 @@ function initializePage() {
 	$(".homescreen_button").click(likeClick);
 }
 
-function likeClick(e) {
-	// prevent page from reloading
-	e.preventDefault();
-	
+function likeClick(e) {	
 	// record a Google Analytics event
 	ga('send', 'event', 'like', 'click');
 }
